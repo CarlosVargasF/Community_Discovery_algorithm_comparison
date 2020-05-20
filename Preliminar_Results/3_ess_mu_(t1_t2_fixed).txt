@@ -1,0 +1,24 @@
+Testing LFR Bchmk by varying mu [0.1 - 1] with t1=2.18, t2 = 1.02 
+
+mu = 0.10 -------------------------------------------
+          t1 = 2.18, t2 = 1.02 -> Failed: Could not assign communities; try increasing min_community
+mu = 0.20 -------------------------------------------
+          t1 = 2.18, t2 = 1.02 -> Failed: Could not assign communities; try increasing min_community
+mu = 0.30 -------------------------------------------
+          t1 = 2.18, t2 = 1.02 -> Failed: Could not assign communities; try increasing min_community
+mu = 0.40 -------------------------------------------
+          t1 = 2.18, t2 = 1.02 -> Failed: Could not assign communities; try increasing min_community
+mu = 0.50 -------------------------------------------
+          t1 = 2.18, t2 = 1.02 -> Succeded
+mu = 0.60 -------------------------------------------
+          t1 = 2.18, t2 = 1.02 -> Succeded
+mu = 0.70 -------------------------------------------
+          t1 = 2.18, t2 = 1.02 -> Succeded
+mu = 0.80 -------------------------------------------
+          t1 = 2.18, t2 = 1.02 -> Succeded
+mu = 0.90 -------------------------------------------
+          t1 = 2.18, t2 = 1.02 -> Succeded
+mu = 1.00 -------------------------------------------
+          t1 = 2.18, t2 = 1.02 -> Succeded
+
+--- Temps d'exécution: 1 secondes ---

@@ -1,0 +1,102 @@
+Testing LFR Bchmk by varying t1 [2.0 - 2.5] and t2 [1.0 - 1.5]
+
+mu = 0.10 -------------------------------------------
+      t1 = 2.00, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.00, t2 = 1.25 -> Failed: Could not match average_degree
+      t1 = 2.00, t2 = 1.50 -> Failed: Could not match average_degree
+      t1 = 2.25, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.25, t2 = 1.25 -> Failed: Could not assign communities; try increasing min_community
+      t1 = 2.25, t2 = 1.50 -> Failed: Could not assign communities; try increasing min_community
+      t1 = 2.50, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.50, t2 = 1.25 -> Failed: Could not assign communities; try increasing min_community
+      t1 = 2.50, t2 = 1.50 -> Failed: Could not assign communities; try increasing min_community
+mu = 0.20 -------------------------------------------
+      t1 = 2.00, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.00, t2 = 1.25 -> Failed: Could not match average_degree
+      t1 = 2.00, t2 = 1.50 -> Failed: Could not match average_degree
+      t1 = 2.25, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.25, t2 = 1.25 -> Failed: Could not assign communities; try increasing min_community
+      t1 = 2.25, t2 = 1.50 -> Failed: Could not assign communities; try increasing min_community
+      t1 = 2.50, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.50, t2 = 1.25 -> Failed: Could not assign communities; try increasing min_community
+      t1 = 2.50, t2 = 1.50 -> Failed: Could not assign communities; try increasing min_community
+mu = 0.30 -------------------------------------------
+      t1 = 2.00, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.00, t2 = 1.25 -> Failed: Could not match average_degree
+      t1 = 2.00, t2 = 1.50 -> Failed: Could not match average_degree
+      t1 = 2.25, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.25, t2 = 1.25 -> Failed: Could not assign communities; try increasing min_community
+      t1 = 2.25, t2 = 1.50 -> Succeded
+      t1 = 2.50, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.50, t2 = 1.25 -> Failed: Could not assign communities; try increasing min_community
+      t1 = 2.50, t2 = 1.50 -> Failed: Could not assign communities; try increasing min_community
+mu = 0.40 -------------------------------------------
+      t1 = 2.00, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.00, t2 = 1.25 -> Failed: Could not match average_degree
+      t1 = 2.00, t2 = 1.50 -> Failed: Could not match average_degree
+      t1 = 2.25, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.25, t2 = 1.25 -> Succeded
+      t1 = 2.25, t2 = 1.50 -> Succeded
+      t1 = 2.50, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.50, t2 = 1.25 -> Succeded
+      t1 = 2.50, t2 = 1.50 -> Succeded
+mu = 0.50 -------------------------------------------
+      t1 = 2.00, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.00, t2 = 1.25 -> Failed: Could not match average_degree
+      t1 = 2.00, t2 = 1.50 -> Failed: Could not match average_degree
+      t1 = 2.25, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.25, t2 = 1.25 -> Succeded
+      t1 = 2.25, t2 = 1.50 -> Succeded
+      t1 = 2.50, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.50, t2 = 1.25 -> Succeded
+      t1 = 2.50, t2 = 1.50 -> Succeded
+mu = 0.60 -------------------------------------------
+      t1 = 2.00, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.00, t2 = 1.25 -> Failed: Could not match average_degree
+      t1 = 2.00, t2 = 1.50 -> Failed: Could not match average_degree
+      t1 = 2.25, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.25, t2 = 1.25 -> Succeded
+      t1 = 2.25, t2 = 1.50 -> Succeded
+      t1 = 2.50, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.50, t2 = 1.25 -> Succeded
+      t1 = 2.50, t2 = 1.50 -> Succeded
+mu = 0.70 -------------------------------------------
+      t1 = 2.00, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.00, t2 = 1.25 -> Failed: Could not match average_degree
+      t1 = 2.00, t2 = 1.50 -> Failed: Could not match average_degree
+      t1 = 2.25, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.25, t2 = 1.25 -> Succeded
+      t1 = 2.25, t2 = 1.50 -> Succeded
+      t1 = 2.50, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.50, t2 = 1.25 -> Succeded
+      t1 = 2.50, t2 = 1.50 -> Succeded
+mu = 0.80 -------------------------------------------
+      t1 = 2.00, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.00, t2 = 1.25 -> Failed: Could not match average_degree
+      t1 = 2.00, t2 = 1.50 -> Failed: Could not match average_degree
+      t1 = 2.25, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.25, t2 = 1.25 -> Succeded
+      t1 = 2.25, t2 = 1.50 -> Succeded
+      t1 = 2.50, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.50, t2 = 1.25 -> Succeded
+      t1 = 2.50, t2 = 1.50 -> Succeded
+mu = 0.90 -------------------------------------------
+      t1 = 2.00, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.00, t2 = 1.25 -> Failed: Could not match average_degree
+      t1 = 2.00, t2 = 1.50 -> Failed: Could not match average_degree
+      t1 = 2.25, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.25, t2 = 1.25 -> Succeded
+      t1 = 2.25, t2 = 1.50 -> Succeded
+      t1 = 2.50, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.50, t2 = 1.25 -> Succeded
+      t1 = 2.50, t2 = 1.50 -> Succeded
+mu = 1.00 -------------------------------------------
+      t1 = 2.00, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.00, t2 = 1.25 -> Failed: Could not match average_degree
+      t1 = 2.00, t2 = 1.50 -> Failed: Could not match average_degree
+      t1 = 2.25, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.25, t2 = 1.25 -> Succeded
+      t1 = 2.25, t2 = 1.50 -> Succeded
+      t1 = 2.50, t2 = 1.00 -> Failed: tau2 must be greater than one
+      t1 = 2.50, t2 = 1.25 -> Succeded
+      t1 = 2.50, t2 = 1.50 -> Succeded
