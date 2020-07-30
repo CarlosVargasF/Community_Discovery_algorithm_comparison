@@ -4,17 +4,37 @@ This work consist of three parts. The first one is a general-purpose function to
 Lyon, July 30 2020.
 
 # Content
-* [Generic function](#generic-function)
-*
-*
+* [Technologies](#technologies)
+* [Generic_Function](#generic-function)
+* [Standardization Function](#standardization-function)
+* [Visualization](#visualization)
+* [Author](#autor)
 
 # Technologies
+The main tool used to develop this code was Python using Jupyter notebooks in Google Colab.
+
+The libraries used:
+
+Python                   3.6.9,
+google-colab             1.0.0,
+CDlib                    0.1.8,
+networkx                 2.4,
+numpy                    1.18.5,
+pandas                   1.0.5,
+matplotlib               3.2.2,
+seaborn                  0.10.1,
+tqdm                     4.41.1,
+wurlitzer                2.0.1,
+urllib3                  1.24.3,
+bokeh                    2.1.1,
+infomap                  1.1.3,
+leidenalg                0.8.1,
+angel-cd                 1.0.2
 
 
-# Functions
-## Generic Function (evaluate())
+# Generic Function 
 
-This is a general-purpose function to apply a (or few) Community Discovery algorithm(s) over a list of benchmark graphs with community structure.
+evaluate() is a general-purpose function to apply a (or few) Community Discovery algorithm(s) over a list of benchmark graphs with community structure.
 The list of true communities must be provided for each graph to evaluate the performance of the algorithm.
 According to algorithm type it is possible to choose one or more evaluation metrics.
 
@@ -34,17 +54,17 @@ The function was thought to work with any community discovery algorithm taking a
 
 The function was thought to work with any community evaluation method.
 
-## Standardization Function (evaluate_and_compare())
+# Standardization Function 
 
-Function that compares Community Detection algorithms using pre-defined benchmark graphs with several case studies.
+evaluate_and_compare() is a function that compares Community Detection algorithms using pre-defined benchmark graphs with several case studies.
 It is possible to compare multiple algorithms, with multiple metrics over multiple case studies.
 
 **Parameters**
 ```
-algos_list: list or str, Algorithm's names to compare. If str, it must be a space-separated string containing the algorithms. 
-methods_list: list or str, Evaluation metric's names to use. If str, it must be a space-separated string containing the metrics.
-benchmark_type: str, The type of benchmark graphs to use.
-case_list: list or str, Specific benchmark cases to use. If str, it must be a space-separated string containing the cases.
+algos_list     : list or str, Algorithm's names to compare. If str, it must be a space-separated string containing the algorithms. 
+methods_list   : list or str, Evaluation metric's names to use. If str, it must be a space-separated string containing the metrics.
+benchmark_type : str, The type of benchmark graphs to use.
+case_list      : list or str, Specific benchmark cases to use. If str, it must be a space-separated string containing the cases.
 ```
 
 **Supported CD algorithms and evaluation metrics**
@@ -53,12 +73,62 @@ The function supports almost all node clustering community discovery algorithms 
 
 All partition comparisons scores implemented in CDlib are supported.
 
+**benchmark_type and case_list options**
+
+There are several possible case studies regarding selected benchmark. 
+
+Benchmark |  Case
+-----     |  ------ 
+'undir_unwei' |'n_1k_sz_small'   
+'undir_unwei'|'n_1k_sz_big'    
+'undir_unwei'|'n_5k_sz_small'   
+'undir_unwei'|'n_5k_sz_big'  
+'undir_wei'|'n_5k_sz_small_ut_05' 
+'undir_wei'|'n_5k_sz_small_ut_08'     
+'undir_wei'|'n_5k_sz_big_ut_05'    
+'undir_wei'|'n_5k_sz_big_ut_08'
+'dir_unwei'|'n_1k_sz_small'
+'dir_unwei'|'n_1k_sz_big'   
+'dir_unwei'|'n_5k_sz_small' 
+'dir_unwei'|'n_5k_sz_big'
+'undir_unwei_ovlp'|'n_5k_sz_small_ut_01' 
+'undir_unwei_ovlp'|'n_5k_sz_small_ut_03' 
+'undir_unwei_ovlp'|'n_5k_sz_big_ut_01'  
+'undir_unwei_ovlp'|'n_5k_sz_big_ut_03'
+
 **Benchmark Notes**
 
 The provided set of benchmark graphs were generated using external C++ code from this [source](https://github.com/eXascaleInfolab/LFR-Benchmark_UndirWeightOvp/tree/1ccbbc38c0aa363ca88d67fe6787cd78bb93d9ff) and the parameter values as well as the case studies considered were taken from this [paper](https://www.researchgate.net/publication/43020118_Community_Detection_Algorithms_A_Comparative_Analysis). However, the resulting benchmarks were reduced in quantity due to practical reasons, so instead of 100 graphs we generate only 10 graphs per mixing parameter (ut) value/point. 
 Another diference with respect the paper is the distance between mixing parameter points, we consider a distance of 0.1 instead 0.05, the results is the half of points considered in the paper.
 
-The shell scripts built for this task are available in the Scripts folder of this repository.
+The shell(bash) scripts created for this task are available in the Scripts folder of this repository.
+
+**Output**
+
+This is an example of the expected output.
+
+
+
+# Visualization
+
+Both plotting functions take the same input parameters and produce the same plots, the only difference is the first one uses classical plotting librairies while the second use Bokeh which allow some interactivity. 
+
+**Parameters**
+
+```
+dataframe         : dataframe, A dataframe produced with previous functions
+algos_to_compare  : list or str, If str, it must be a space-separated string containing the algorithms.
+cases_to_compare  : list or str, If str, it must be a space-separated string containing the cases.
+heat_map          : boolean, If true the output is a heatmap.```
+```
+
+**Output**
+
+This is an example of the expected output for the first plotting function.
+
+
+This is an example of the expected output for the second plotting function.
+
 
 # Author
 Code performed by Carlos Vargas Figueroa under supervision of Rémy Cazabet, Phd. 
