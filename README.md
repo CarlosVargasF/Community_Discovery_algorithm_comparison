@@ -8,7 +8,7 @@ Lyon, July 30 2020.
 * [Generic_Function](#generic-function)
 * [Standardization Function](#standardization-function)
 * [Visualization](#visualization)
-* [Author](#autor)
+* [Author](#author)
 
 # Technologies
 The main tool used to develop this code was Python using Jupyter notebooks in Google Colab.
@@ -107,7 +107,9 @@ The shell(bash) scripts created for this task are available in the Scripts folde
 
 This is an example of the expected output.
 
+![output1](/img/exec1.png)
 
+![output2](/img/df.png)
 
 # Visualization
 
@@ -126,10 +128,15 @@ heat_map          : boolean, If true the output is a heatmap.```
 
 This is an example of the expected output for the first plotting function.
 
+![plot1](/img/plot1.png)
+
+![plot2](/img/plot2.png)
 
 This is an example of the expected output for the second plotting function.
 
+![plot3](/img/plot3.png)
+
+![plot4](/img/plot4.png)
 
 # Author
 Code performed by Carlos Vargas Figueroa under supervision of Rémy Cazabet, Phd. 
-
