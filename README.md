@@ -1,5 +1,5 @@
 # Description
-This work consist of three parts. The first one is a general-purpose function to apply Community Detection (CD) algorithms (Crisp partitions / Overlapping communities) over provided benchmark graphs and calulate their performances using one or more evaluation metrics. The second one is a standardization function that make use of the first function to perform a comparison between multiple algorithms using several pre-defined sets of benchmarks graphs generated with an [Extended version of the Lancichinetti-Fortunato-Radicchi Benchmark](https://github.com/eXascaleInfolab/LFR-Benchmark_UndirWeightOvp/tree/1ccbbc38c0aa363ca88d67fe6787cd78bb93d9ff) code and the research paper [Community Detection Algorithms: A Comparative Analysis](https://www.researchgate.net/publication/43020118_Community_Detection_Algorithms_A_Comparative_Analysis). The third part are two visualization functions, one made with classical plotting librairies (matplotlib/seaborn) and the other with [Bokeh](https://bokeh.org/) which allow interactive plots.
+This work consist of four parts. The first one is a general-purpose function to apply Community Detection (CD) algorithms (Crisp partitions / Overlapping communities) over provided benchmark graphs and calulate their performances using one or more evaluation metrics. The second one is a standardization function that make use of the first function to perform a comparison between multiple algorithms using several pre-defined sets of benchmarks graphs generated with an [Extended version of the Lancichinetti-Fortunato-Radicchi Benchmark](https://github.com/eXascaleInfolab/LFR-Benchmark_UndirWeightOvp/tree/1ccbbc38c0aa363ca88d67fe6787cd78bb93d9ff) code and the research paper [Community Detection Algorithms: A Comparative Analysis](https://www.researchgate.net/publication/43020118_Community_Detection_Algorithms_A_Comparative_Analysis). The third part are two visualization functions, one made with classical plotting librairies (matplotlib/seaborn) and the other with [Bokeh](https://bokeh.org/) which allow interactive plots. The final part is a test performed over all CDlib algorithms used into the functions to check implementation issues.
 
 Lyon, July 30 2020.
 
@@ -8,6 +8,7 @@ Lyon, July 30 2020.
 * [Generic_Function](#generic-function)
 * [Standardization Function](#standardization-function)
 * [Visualization](#visualization)
+* [Algorithm's Test Results](#test-results)
 * [Author](#author)
 
 # Technologies
@@ -64,7 +65,7 @@ It is possible to compare multiple algorithms, with multiple metrics over multip
 algos_list     : list or str, Algorithm's names to compare. If str, it must be a space-separated string containing the algorithms. 
 methods_list   : list or str, Evaluation metric's names to use. If str, it must be a space-separated string containing the metrics.
 benchmark_type : str, The type of benchmark graphs to use.
-case_list      : list or str, Specific benchmark cases to use. If str, it must be a space-separated string containing the cases.
+case_list      : list or str, optional, Specific benchmark cases to use. If str, it must be a space-separated string containing the cases.
 ```
 
 **Supported CD algorithms and evaluation metrics**
@@ -119,9 +120,9 @@ Both plotting functions `plot_and_compare()`  and  `plot_and_compare_bokeh()` ta
 
 ```
 dataframe         : dataframe, A dataframe produced with previous functions
-algos_to_compare  : list or str, If str, it must be a space-separated string containing the algorithms.
-cases_to_compare  : list or str, If str, it must be a space-separated string containing the cases.
-heat_map          : boolean, If true the output is a heatmap.```
+algos_to_compare  : list or str, optional, If str it must be a space-separated string containing the algorithms.
+cases_to_compare  : list or str, optional, If str it must be a space-separated string containing the cases.
+heat_map          : boolean, optional, If true the output is a heatmap.```
 ```
 
 **Output**
@@ -137,6 +138,16 @@ This is an example of the expected output for `plot_and_compare_bokeh()` functio
 ![plot3](/img/plot3.png)
 
 ![plot4](/img/plot4.png)
+
+# Test Results
+
+Each algorithm considered in this work was tested using `evaluate_and_compare()` to check possibles incompatibilities and implementation issues. Some of them (Overlapping communities) were tested using a smaller graph set due to high execution times. These are the results.
+
+![tab1](/img/table1.png)
+
+![tab2](/img/table2.png)
+
+![tab3](/img/table3.png)
 
 # Author
 Code performed by Carlos Vargas Figueroa under supervision of Rémy Cazabet, Phd. 
