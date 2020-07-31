@@ -689,6 +689,17 @@ df=evaluate_and_compare('infomap leiden', 'nmi', 'undir_unwei', 'n_1k_sz_small n
 """##Plotting Function (plt - sns)"""
 
 def plot_and_compare(dataframe, algos_to_compare='all', cases_to_compare='all', heat_map=False):
+  
+  """
+      This function allows to make a graphical comparison with the results of the function evaluate_and_compare().
+      It is possible to plot curves or a heat map.
+      
+      :param dataframe: dataframe, A dataframe produced with previous functions
+	    :param algos_to_compare: list or str, optional, If str it must be a space-separated string containing the algorithms.
+	    :param cases_to_compare: list or str, optional, If str it must be a space-separated string containing the cases.
+	    :param heat_map: boolean, optional, If true the output is a heatmap.             
+  """ 
+  
   #set style
   plt.style.use('default')
   algos_in_df = dataframe['Algorithm'].unique()
@@ -763,6 +774,17 @@ output_notebook()
 #output_notebook()     # Call instead if not in a jupyter NB
 
 def plot_and_compare_bokeh(dataframe, algos_to_compare='all', cases_to_compare='all', heat_map=False):
+  
+  """
+      This function allows to make a graphical comparison with the results of the function evaluate_and_compare().
+      It is possible to plot curves or a heat map.
+      Bokeh allow certain interactivity with the plots. In this case is possible to show/hide the individual curves by clicking over the corresponding leyend label. Also, when placing the cursor over a curve a pop-up will display the value at this point.   
+
+      :param dataframe: dataframe, A dataframe produced with previous functions
+	    :param algos_to_compare: list or str, optional, If str it must be a space-separated string containing the algorithms.
+	    :param cases_to_compare: list or str, optional, If str it must be a space-separated string containing the cases.
+	    :param heat_map: boolean, optional, If true the output is a heatmap.             
+  """ 
   
   plt.style.use('default')
   algos_in_df = dataframe['Algorithm'].unique()
