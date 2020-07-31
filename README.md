@@ -112,6 +112,8 @@ This is an example of the expected output.
 
 ![output2](/img/df.png)
 
+**Reference**: Lancichinetti, Andrea & Fortunato, Santo. (2009). Community Detection Algorithms: A Comparative Analysis. Physical review. E, Statistical, nonlinear, and soft matter physics. 80. 056117. 10.1103/PhysRevE.80.056117. 
+
 # Visualization
 
 Both plotting functions `plot_and_compare()`  and  `plot_and_compare_bokeh()` take the same input parameters and produce the same plots, the only difference is the first one uses classical plotting librairies while the second use Bokeh which allow some interactivity. 
