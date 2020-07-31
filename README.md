@@ -34,7 +34,7 @@ angel-cd                 1.0.2
 
 # Generic Function 
 
-evaluate() is a general-purpose function to apply a (or few) Community Discovery algorithm(s) over a list of benchmark graphs with community structure.
+`evaluate()` is a general-purpose function to apply a (or few) Community Discovery algorithm(s) over a list of benchmark graphs with community structure.
 The list of true communities must be provided for each graph to evaluate the performance of the algorithm.
 According to algorithm type it is possible to choose one or more evaluation metrics.
 
@@ -56,7 +56,7 @@ The function was thought to work with any community evaluation method.
 
 # Standardization Function 
 
-evaluate_and_compare() is a function that compares Community Detection algorithms using pre-defined benchmark graphs with several case studies.
+`evaluate_and_compare()` is a function that compares Community Detection algorithms using pre-defined benchmark graphs with several case studies.
 It is possible to compare multiple algorithms, with multiple metrics over multiple case studies.
 
 **Parameters**
@@ -101,7 +101,7 @@ Benchmark |  Case
 The provided set of benchmark graphs were generated using external C++ code from this [source](https://github.com/eXascaleInfolab/LFR-Benchmark_UndirWeightOvp/tree/1ccbbc38c0aa363ca88d67fe6787cd78bb93d9ff) and the parameter values as well as the case studies considered were taken from this [paper](https://www.researchgate.net/publication/43020118_Community_Detection_Algorithms_A_Comparative_Analysis). However, the resulting benchmarks were reduced in quantity due to practical reasons, so instead of 100 graphs we generate only 10 graphs per mixing parameter (ut) value/point. 
 Another diference with respect the paper is the distance between mixing parameter points, we consider a distance of 0.1 instead 0.05, the results is the half of points considered in the paper.
 
-The shell(bash) scripts created for this task are available in the Scripts folder of this repository.
+The `shell(bash)` scripts created for this task are available in the `Graph_scripts` folder of this repository.
 
 **Output**
 
@@ -113,7 +113,7 @@ This is an example of the expected output.
 
 # Visualization
 
-Both plotting functions take the same input parameters and produce the same plots, the only difference is the first one uses classical plotting librairies while the second use Bokeh which allow some interactivity. 
+Both plotting functions `plot_and_compare()`  and  `plot_and_compare_bokeh()` take the same input parameters and produce the same plots, the only difference is the first one uses classical plotting librairies while the second use Bokeh which allow some interactivity. 
 
 **Parameters**
 
@@ -126,13 +126,13 @@ heat_map          : boolean, If true the output is a heatmap.```
 
 **Output**
 
-This is an example of the expected output for the first plotting function.
+This is an example of the expected output for `plot_and_compare()` function.
 
 ![plot1](/img/plot1.png)
 
 ![plot2](/img/plot2.png)
 
-This is an example of the expected output for the second plotting function.
+This is an example of the expected output for `plot_and_compare_bokeh()` function.
 
 ![plot3](/img/plot3.png)
 
