@@ -15,20 +15,20 @@ The main tool used to develop this code was Python using Jupyter notebooks in Go
 
 The libraries used:
 ```
-Python                   3.6.9,
-google-colab             1.0.0,
-CDlib                    0.1.8,
-networkx                 2.4,
-numpy                    1.18.5,
-pandas                   1.0.5,
-matplotlib               3.2.2,
-seaborn                  0.10.1,
-tqdm                     4.41.1,
-wurlitzer                2.0.1,
-urllib3                  1.24.3,
-bokeh                    2.1.1,
-infomap                  1.1.3,
-leidenalg                0.8.1,
+Python                   3.6.9
+google-colab             1.0.0
+CDlib                    0.1.8
+networkx                 2.4
+numpy                    1.18.5
+pandas                   1.0.5
+matplotlib               3.2.2
+seaborn                  0.10.1
+tqdm                     4.41.1
+wurlitzer                2.0.1
+urllib3                  1.24.3
+bokeh                    2.1.1
+infomap                  1.1.3
+leidenalg                0.8.1
 angel-cd                 1.0.2
 ```
 
