@@ -151,4 +151,4 @@ Each algorithm considered in this work was tested using `evaluate_and_compare()`
 ![tab3](/img/table3.png)
 
 # Author
-Code performed by Carlos Vargas Figueroa under supervision of Rémy Cazabet, Phd. 
+Code performed by Carlos Vargas Figueroa, CS master student at [Ensimag - UGA](https://ensimag.grenoble-inp.fr/).  
