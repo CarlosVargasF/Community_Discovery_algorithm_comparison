@@ -1,7 +1,6 @@
 # Description
 This work consist of four parts. The first one is a general-purpose function to apply Community Detection (CD) algorithms (Crisp partitions / Overlapping communities) over provided benchmark graphs and calulate their performances using one or more evaluation metrics. The second one is a standardization function that make use of the first function to perform a comparison between multiple algorithms using several pre-defined sets of benchmarks graphs generated with an [Extended version of the Lancichinetti-Fortunato-Radicchi Benchmark](https://github.com/eXascaleInfolab/LFR-Benchmark_UndirWeightOvp/tree/1ccbbc38c0aa363ca88d67fe6787cd78bb93d9ff) code and the research paper [Community Detection Algorithms: A Comparative Analysis](https://www.researchgate.net/publication/43020118_Community_Detection_Algorithms_A_Comparative_Analysis). The third part are two visualization functions, one made with classical plotting librairies (matplotlib/seaborn) and the other with [Bokeh](https://bokeh.org/) which allow interactive plots. The final part is a test performed over all CDlib algorithms used into the functions to check implementation issues.
 
-Lyon, July 30 2020.
 
 # Content
 * [Technologies](#technologies)
@@ -15,7 +14,7 @@ Lyon, July 30 2020.
 The main tool used to develop this code was Python using Jupyter notebooks in Google Colab.
 
 The libraries used:
-
+```
 Python                   3.6.9,
 google-colab             1.0.0,
 CDlib                    0.1.8,
@@ -31,7 +30,7 @@ bokeh                    2.1.1,
 infomap                  1.1.3,
 leidenalg                0.8.1,
 angel-cd                 1.0.2
-
+```
 
 # Generic Function 
 
